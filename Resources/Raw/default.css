@@ -1,0 +1,49 @@
+﻿body {
+	font-size: large;
+	color: #FFFFFF;
+	background-color: #000000;
+}
+img {
+	max-width: 100%;
+	height: auto;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: auto;
+}
+
+.highlight {
+	color: orangered;
+}
+a:link {
+	color: mediumspringgreen;
+}
+a:visited {
+	color: mediumspringgreen;
+}
+.auto-style1 {
+	border-style: solid;
+	border-width: 2px;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+.center-image {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 100%;
+	width: 50%;
+}
+
+u {
+	font-family:icons;
+	text-decoration-line:none;
+}
+
+@font-face {
+	font-family: icons;
+	src:url(materialdesignicons-webfont.ttf)
+}
+
+

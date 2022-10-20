@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Help"
+             x:Class="Help.HelpPage"
+             BindingContext="{Binding Source={RelativeSource Self}}"
+             x:DataType="local:HelpPage">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Clicked="OnHelpIconClicked">
+            <ToolbarItem.IconImageSource>
+                <FontImageSource Glyph="?"/>
+            </ToolbarItem.IconImageSource>
+        </ToolbarItem>
+    </ContentPage.ToolbarItems>
+    <Shell.BackButtonBehavior>
+        <BackButtonBehavior x:Name="bbb" Command="{Binding BackCommand}"/>
+    </Shell.BackButtonBehavior>
+    <Grid>
+        <WebView x:Name="webView" BackgroundColor="AliceBlue"/>
+    </Grid>
+
+</ContentPage>

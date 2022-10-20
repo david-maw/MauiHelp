@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="Help.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:Help"
+    Shell.FlyoutBehavior="Flyout">
+
+    <ShellContent Title="Main Page" ContentTemplate="{DataTemplate local:MainPage}" Route="Main"/>
+    <ShellContent Title="Test Page" ContentTemplate="{DataTemplate local:TestPage}" Route="Test"/>
+    <MenuItem/>
+    <!--Leave a blank line-->
+    <MenuItem Text="Help" Clicked="OnHelpClicked"/>
+
+</Shell>
